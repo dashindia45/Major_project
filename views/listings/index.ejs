@@ -1,0 +1,15 @@
+<%layout("/layouts/boilerplate") %>
+<body>
+    <h3>All listings</h3>
+  <form  method="get"action="/listings/new">
+    <button>Create new list</button>
+  </form>
+    <ul>
+        <% allistings.forEach(function(list) { %>
+            <li>
+                <a href="/listings/<%= list._id %>"><%= list.title %></a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+

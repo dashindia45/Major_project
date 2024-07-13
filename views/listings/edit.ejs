@@ -1,0 +1,18 @@
+<%layout("/layouts/boilerplate") %>
+<body>
+    
+    <form method="POST" action="/listing/editsubmit/<%= listdata._id %>"  >
+
+        <input type="text" name="listing[title]" value="<%= listdata.title %>">
+        <br>
+        <textarea name="listing[description]" cols="30" rows="10"><%= listdata.description %></textarea>
+        <br>
+        <input type="number" name="listing[price]" value="<%= listdata.price %>">
+        <br>
+        <input type="text" name="listing[location]" value="<%= listdata.location %>">
+        <br>
+        <input type="text" name="listing[city]" value="<%= listdata.city %>">
+        <br>
+        <button type="submit">EDIT</button>
+    </form>
+</body>

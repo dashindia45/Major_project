@@ -1,0 +1,14 @@
+<%layout("/layouts/boilerplate") %>
+<body>
+    <h3>Listings Details</h3>
+    <li><%=listdata.title%></li>
+    <li>&#8377;<%=listdata.price.toLocaleString('en-IN') %></li>
+    <li><%=listdata.description %></li>
+    <li><%=listdata.city %></li>
+    <li><%=listdata.location%></li>
+  <br>
+  <a href="/listings/<%= listdata._id %>/edit" type="button" class="button">Edit</a>
+  <br>
+  <form id="deleteForm" action="/listings/<%= listdata._id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete Listing</button>
+</body>
