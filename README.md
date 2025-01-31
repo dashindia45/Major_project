@@ -1,5 +1,5 @@
 
-# Major_project
+
 # Rentify
 
 **Rentify** is a dynamic platform that facilitates asset rentals, allowing users to monetize their belongings by renting them out to others. This project aims to provide an easy-to-use and efficient service for both owners and renters.
